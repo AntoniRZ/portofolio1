@@ -40,7 +40,7 @@ const workProjects = [
     description: "Redesain menyeluruh dashboard internal perusahaan untuk meningkatkan keterbacaan data dan efisiensi workflow tim operasional.", // ⚠️ GANTI
     role: "Lead UI/UX Designer",                       // ⚠️ GANTI
     period: "Jan 2024 – Apr 2024",                     // ⚠️ GANTI
-    category: "UI/UX Design",                          // ⚠️ GANTI — digunakan untuk filter
+    category: "Excell",                          // ⚠️ GANTI — digunakan untuk filter
     tags: ["Figma", "Design System", "Data Viz"],      // ⚠️ GANTI
     coverImage: "assets/images/work/w1-cover.jpg",     // ⚠️ GANTI
     images: [                                           // ⚠️ GANTI — gambar detail
@@ -57,7 +57,7 @@ const workProjects = [
     description: "Desain pengalaman belanja mobile-first untuk platform e-commerce B2C dengan fokus pada conversion rate dan retensi pengguna.", // ⚠️ GANTI
     role: "UI Designer & Prototyper",                  // ⚠️ GANTI
     period: "Jun 2023 – Oct 2023",                     // ⚠️ GANTI
-    category: "Mobile Design",                         // ⚠️ GANTI
+    category: "Engagement",                         // ⚠️ GANTI
     tags: ["Figma", "Prototyping", "User Testing"],    // ⚠️ GANTI
     coverImage: "assets/images/work/w2-cover.jpg",     // ⚠️ GANTI
     images: [
@@ -88,7 +88,7 @@ const workProjects = [
     description: "Redesain halaman pemasaran produk SaaS dengan pendekatan storytelling visual untuk meningkatkan trial sign-up sebesar 40%.", // ⚠️ GANTI
     role: "Frontend Developer & UI Designer",          // ⚠️ GANTI
     period: "Nov 2022 – Jan 2023",                     // ⚠️ GANTI
-    category: "Web Design",                            // ⚠️ GANTI
+    category: "Design Poster",                            // ⚠️ GANTI
     tags: ["React", "Tailwind", "Framer Motion"],      // ⚠️ GANTI
     coverImage: "assets/images/work/w4-cover.jpg",     // ⚠️ GANTI
     images: [
