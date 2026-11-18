@@ -26,8 +26,8 @@ const ownerInfo = {
   github: "https://github.com/AntoniRZ",   // ⚠️ GANTI (opsional)
   tiktok: "https://tiktok.com/@altongaud", // ⚠️ GANTI (opsional)
   instagram: "https://www.instagram.com/antonirzz",  // ⚠️ GANTI (opsional)
-  cvLink: "assets/CV/Antoni_Roozaq_Pratomo-CV 1.pdf",                              // ⚠️ GANTI — link download CV Anda
-  avatarImage: "assets/images/avatar.jpg", // ⚠️ GANTI — foto profil Anda
+  cvLink: "assets/CV/Antoni Roozaq Pratomo-CV 1.pdf",                              // ⚠️ GANTI — link download CV Anda
+  avatarImage: "assets/images/personal/pandawa beach.jpg", // ⚠️ GANTI — foto profil Anda
 };
 
 // ----------------------------------------------------------------
