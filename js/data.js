@@ -27,7 +27,7 @@ const ownerInfo = {
   tiktok: "https://tiktok.com/@altongaud", // ⚠️ GANTI (opsional)
   instagram: "https://www.instagram.com/antonirzz",  // ⚠️ GANTI (opsional)
   cvLink: "assets/CV/Antoni Roozaq Pratomo-CV 1.pdf",                              // ⚠️ GANTI — link download CV Anda
-  avatarImage: "assets/images/personal/pandawa beach.jpg", // ⚠️ GANTI — foto profil Anda
+  avatarImage: "assets/images/pandawa beach.jpg", // ⚠️ GANTI — foto profil Anda
 };
 
 // ----------------------------------------------------------------
