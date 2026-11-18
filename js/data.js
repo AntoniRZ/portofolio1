@@ -24,9 +24,9 @@ const ownerInfo = {
   email: "antonioni721@gmail.com",             // ⚠️ GANTI
   linkedin: "https://linkedin.com/in/antoni-roozaq", // ⚠️ GANTI (opsional)
   github: "https://github.com/AntoniRZ",   // ⚠️ GANTI (opsional)
-  dribbble: "https://dribbble.com/username", // ⚠️ GANTI (opsional)
-  behance: "https://behance.net/username",  // ⚠️ GANTI (opsional)
-  cvLink: "#",                              // ⚠️ GANTI — link download CV Anda
+  tiktok: "https://tiktok.com/@altongaud", // ⚠️ GANTI (opsional)
+  instagram: "https://www.instagram.com/antonirzz",  // ⚠️ GANTI (opsional)
+  cvLink: "assets/CV/Antoni_Roozaq_Pratomo-CV 1.pdf",                              // ⚠️ GANTI — link download CV Anda
   avatarImage: "assets/images/avatar.jpg", // ⚠️ GANTI — foto profil Anda
 };
 
