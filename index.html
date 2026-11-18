@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="id" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio profesional — UI/UX Designer & Frontend Developer">
+  <meta name="theme-color" content="#080b14">
+
+  <!-- Open Graph / Social sharing -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Portfolio — Nama Anda">
+  <meta property="og:description" content="UI/UX Designer & Frontend Developer Portfolio">
+  <meta property="og:image"       content="assets/images/og-preview.jpg">
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+
+  <title>Portfolio — Nama Anda</title><!-- ⚠️ GANTI otomatis via JS -->
+</head>
+<body>
+
+  <!-- ============================================================
+       SKIP LINK (Aksesibilitas)
+       ============================================================ -->
+  <a href="#main-content" class="visually-hidden" style="
+    position:fixed; top:0; left:0; z-index:9999;
+    padding:1rem 1.5rem;
+    background:var(--clr-accent);
+    color:white;
+    border-radius:0 0 var(--card-radius) 0;
+    font-weight:700;
+    transform:translateY(-100%);
+    transition:transform 0.2s;
+  " onfocus="this.style.transform='translateY(0)'" onblur="this.style.transform='translateY(-100%)'">
+    Langsung ke konten
+  </a>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <header id="navbar" class="navbar" role="banner">
+    <div class="container">
+      <!-- Logo -->
+      <a href="#hero" class="nav-logo" aria-label="Kembali ke atas">
+        <span data-owner="initials">YN</span><span class="dot">.</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-links" role="navigation" aria-label="Navigasi utama">
+        <a href="#hero"      class="nav-link" aria-label="Bagian: Beranda">Beranda</a>
+        <a href="#portfolio" class="nav-link" aria-label="Bagian: Portofolio">Portofolio</a>
+        <a href="#about"     class="nav-link" aria-label="Bagian: Tentang">Tentang</a>
+        <a href="#contact"   class="nav-link" aria-label="Bagian: Kontak">Kontak</a>
+      </nav>
+
+      <!-- CTA + Hamburger -->
+      <div style="display:flex;align-items:center;gap:0.75rem;">
+        <a href="#contact" class="btn btn-primary nav-cta" aria-label="Hubungi saya">
+          Hubungi Saya
+        </a>
+        <button
+          id="hamburger"
+          class="nav-hamburger"
+          aria-label="Buka menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav id="mobile-nav" class="mobile-nav" role="navigation" aria-label="Navigasi mobile">
+    <a href="#hero"      class="nav-link">🏠 Beranda</a>
+    <a href="#portfolio" class="nav-link">🗂️ Portofolio</a>
+    <a href="#about"     class="nav-link">👤 Tentang</a>
+    <a href="#contact"   class="nav-link">✉️ Kontak</a>
+    <a href="#contact"   class="btn btn-primary" style="margin-top:0.5rem;justify-content:center;">Hubungi Saya</a>
+  </nav>
+
+  <!-- ============================================================
+       MAIN CONTENT
+       ============================================================ -->
+  <main id="main-content">
+
+    <!-- ──────────────────────────────────────────────────────────
+         HERO SECTION
+         ──────────────────────────────────────────────────────── -->
+    <section id="hero" class="hero" aria-labelledby="hero-heading">
+      <!-- Background decorations -->
+      <div class="hero-bg"   aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+      <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+
+          <!-- Text Side -->
+          <div class="hero-text">
+            <div class="hero-greeting" aria-label="Status: Tersedia untuk proyek baru">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              Tersedia untuk proyek baru
+            </div>
+
+            <h1 id="hero-heading" class="hero-name">
+              Halo, saya<br>
+              <span class="gradient-text" data-owner="name">Nama Anda</span>
+            </h1>
+
+            <p class="hero-tagline" data-owner="tagline">
+              UI/UX Designer &amp; Frontend Developer
+            </p>
+
+            <p class="hero-bio" data-owner="bio">
+              Saya seorang desainer dan developer dengan passion menciptakan pengalaman digital yang bermakna.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#portfolio" class="btn btn-primary">
+                Lihat Karya →
+              </a>
+              <a href="#" class="btn btn-outline" data-owner="cv-link" download>
+                Unduh CV
+              </a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="hero-socials" aria-label="Profil media sosial">
+              <span class="hero-socials-label">Temukan saya di:</span>
+
+              <div class="social-wrap">
+                <a data-social="github" href="#" target="_blank" rel="noopener noreferrer"
+                   class="social-link" aria-label="GitHub" data-tooltip="GitHub">
+                  <!-- GitHub SVG icon -->
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="social-wrap">
+                <a data-social="linkedin" href="#" target="_blank" rel="noopener noreferrer"
+                   class="social-link" aria-label="LinkedIn" data-tooltip="LinkedIn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="social-wrap">
+                <a data-social="dribbble" href="#" target="_blank" rel="noopener noreferrer"
+                   class="social-link" aria-label="Dribbble" data-tooltip="Dribbble">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4.006-.816zm-11.62-2.073c.232-.396 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.176zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.46 0-.91.035-1.4.088zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.386z"/>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="social-wrap">
+                <a data-social="behance" href="#" target="_blank" rel="noopener noreferrer"
+                   class="social-link" aria-label="Behance" data-tooltip="Behance">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.051-1.969-5.051-5.020 0-3.100 1.831-5.260 5.101-5.260 3.139 0 4.962 1.950 5.001 5.020-.002.085-.002.449-.002.580h-7.3c.056 2.100 1.5 2.260 2.252 2.260.74 0 1.364-.453 1.737-1.1l3.363.52zM17.726 11.5c-.145-1.280-1.058-1.750-2.063-1.750-1.102 0-1.979.590-2.112 1.750h4.175zM3 7h4.5c3.072 0 3.5 1.800 3.5 2.962 0 1.213-.6 1.950-1.75 2.388 1.4.350 2.25 1.388 2.25 2.950C11.5 18 10.5 19 7 19H3V7zm2.5 4.5H7c1.1 0 1.5-.45 1.5-1.1 0-.713-.45-1.100-1.5-1.100H5.5v2.2zm0 4.5H7c1.5 0 2-.5 2-1.350S8.5 13.5 7 13.5H5.5V16z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual Side (Avatar) -->
+          <div class="hero-visual" aria-hidden="true">
+            <div class="avatar-wrapper">
+              <div class="avatar-ring"></div>
+              <!-- 
+                ⚠️ GANTI: Jika sudah ada foto profil, hapus .avatar-placeholder
+                dan uncomment <img> di bawah. Pastikan path benar.
+
+                <img
+                  class="avatar-img"
+                  src="assets/images/avatar.jpg"
+                  alt="Foto profil Nama Anda"
+                  data-owner="avatar"
+                  width="280" height="280"
+                >
+              -->
+              <div class="avatar-placeholder">
+                👤
+              </div>
+
+              <!-- Badge floating -->
+              <div class="avatar-badge">
+                <span class="badge-dot">●</span>
+                <span>Open to Work</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- .hero-content -->
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="hero-scroll" aria-hidden="true">
+        <div class="hero-scroll-line"></div>
+        <span>scroll</span>
+      </div>
+    </section>
+
+    <!-- ──────────────────────────────────────────────────────────
+         STATS BAR
+         ──────────────────────────────────────────────────────── -->
+    <div class="stats-bar reveal" aria-label="Statistik singkat">
+      <div class="container">
+        <div class="stats-grid reveal-stagger">
+          <div class="stat-item">
+            <span class="stat-value">7+</span>
+            <!-- ⚠️ GANTI angka di atas sesuai pengalaman Anda -->
+            <span class="stat-label">Tahun Pengalaman</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">50+</span>
+            <!-- ⚠️ GANTI -->
+            <span class="stat-label">Proyek Selesai</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">20+</span>
+            <!-- ⚠️ GANTI -->
+            <span class="stat-label">Klien Puas</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">∞</span>
+            <span class="stat-label">Semangat Belajar</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ──────────────────────────────────────────────────────────
+         PORTFOLIO SECTION
+         ──────────────────────────────────────────────────────── -->
+    <section id="portfolio" class="section" aria-labelledby="portfolio-heading">
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <p class="section-label">Karya Saya</p>
+          <h2 id="portfolio-heading" class="section-title">
+            Portofolio <span class="gradient-text">Pilihan</span>
+          </h2>
+          <p class="section-desc">
+            Koleksi karya terbaik dari pengalaman profesional dan proyek pribadi saya.
+          </p>
+        </div>
+
+        <!-- Tab Switcher -->
+        <div class="portfolio-tabs" role="tablist" aria-label="Pilih kategori portofolio">
+          <button
+            class="tab-btn"
+            role="tab"
+            data-tab="work"
+            aria-selected="true"
+            aria-controls="work-panel"
+            id="tab-work"
+          >
+            <span>💼</span>
+            <span>Work</span>
+            <span class="tab-count" data-tab-count="work">0</span>
+          </button>
+
+          <button
+            class="tab-btn"
+            role="tab"
+            data-tab="personal"
+            aria-selected="false"
+            aria-controls="personal-panel"
+            id="tab-personal"
+          >
+            <span>✨</span>
+            <span>Personal</span>
+            <span class="tab-count" data-tab-count="personal">0</span>
+          </button>
+        </div>
+
+        <!-- ── WORK PANEL ───────────────────────────────────── -->
+        <div id="work-panel" role="tabpanel" aria-labelledby="tab-work">
+
+          <!-- Filter Bar Work -->
+          <div
+            id="work-filter"
+            class="filter-bar reveal"
+            role="group"
+            aria-label="Filter kategori Work"
+          >
+            <!-- Tombol filter di-generate oleh gallery.js -->
+          </div>
+
+          <!-- Work Grid -->
+          <div
+            id="work-grid"
+            class="projects-grid"
+            role="list"
+            aria-label="Daftar proyek Work"
+            aria-live="polite"
+          >
+            <!-- Kartu di-generate oleh gallery.js -->
+          </div>
+
+          <!-- ⚠️ NOTE: Work section hanya menampilkan gambar.
+               Tidak ada video atau kode di sini. -->
+        </div>
+
+        <!-- ── PERSONAL PANEL ────────────────────────────────── -->
+        <div id="personal-panel" role="tabpanel" aria-labelledby="tab-personal" hidden>
+
+          <!-- Filter Bar Personal -->
+          <div
+            id="personal-filter"
+            class="filter-bar reveal"
+            role="group"
+            aria-label="Filter kategori Personal"
+          >
+            <!-- Tombol filter di-generate oleh gallery.js -->
+          </div>
+
+          <!-- Personal Grid -->
+          <div
+            id="personal-grid"
+            class="projects-grid"
+            role="list"
+            aria-label="Daftar proyek Personal"
+            aria-live="polite"
+          >
+            <!-- Kartu di-generate oleh gallery.js -->
+            <!-- Personal mendukung: gambar, video, kode landing page, kode portofolio -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ──────────────────────────────────────────────────────────
+         ABOUT SECTION
+         ──────────────────────────────────────────────────────── -->
+    <section id="about" class="section about-section" aria-labelledby="about-heading">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <p class="section-label">Tentang</p>
+          <h2 id="about-heading" class="section-title">
+            Siapa <span class="gradient-text">Saya?</span>
+          </h2>
+        </div>
+
+        <div class="about-grid">
+
+          <!-- About Text & Contact -->
+          <div class="about-text reveal-left">
+            <h2 style="font-size:clamp(1.5rem,3vw,2rem);margin-bottom:1rem;">
+              Designer yang berpikir seperti <span class="gradient-text">Developer</span>
+              <!-- ⚠️ GANTI dengan tagline about Anda -->
+            </h2>
+
+            <p data-owner="bio">
+              <!-- Di-inject oleh main.js dari data.js -->
+              Saya seorang desainer dan developer dengan passion menciptakan pengalaman digital yang bermakna.
+            </p>
+
+            <p style="margin-top:1rem;color:var(--clr-text-secondary);line-height:1.8;">
+              <!-- ⚠️ GANTI dengan paragraf tambahan tentang Anda -->
+              Dengan pengalaman lebih dari 7 tahun, saya telah membantu berbagai startup dan perusahaan
+              membangun produk digital yang tidak hanya indah secara visual, tetapi juga fungsional dan
+              mudah digunakan.
+            </p>
+
+            <!-- Contact Info -->
+            <div class="about-contact" aria-label="Informasi kontak">
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">📍</div>
+                <div class="contact-info">
+                  <div class="contact-label">Lokasi</div>
+                  <div class="contact-value" data-owner="location">Jakarta, Indonesia</div>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">✉️</div>
+                <div class="contact-info">
+                  <div class="contact-label">Email</div>
+                  <a class="contact-value" data-owner="email-link" href="#">
+                    hello@emailanda.com
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top:1.5rem;display:flex;gap:0.75rem;flex-wrap:wrap;">
+              <a href="#contact" class="btn btn-primary">Hubungi Saya</a>
+              <a href="#" class="btn btn-outline" data-owner="cv-link" download>Unduh CV</a>
+            </div>
+          </div>
+
+          <!-- Skills -->
+          <div class="about-skills reveal-right">
+            <h3 style="margin-bottom:1.5rem;font-size:1.25rem;">
+              💡 Skills & Expertise
+              <!-- ⚠️ GANTI atau tambah skill sesuai keahlian Anda -->
+            </h3>
+
+            <div class="skills-grid" aria-label="Daftar keahlian">
+              <!-- ⚠️ GANTI nama skill dan persentase sesuai keahlian Anda -->
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span>UI/UX Design</span>
+                  <span class="skill-pct">95%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width:95%" aria-label="UI/UX Design: 95%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span>Frontend Dev</span>
+                  <span class="skill-pct">88%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width:88%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span>Figma</span>
+                  <span class="skill-pct">98%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width:98%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span>React / Next.js</span>
+                  <span class="skill-pct">82%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width:82%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span>Branding</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width:85%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span>Motion Design</span>
+                  <span class="skill-pct">78%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width:78%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span>TypeScript</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width:80%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span>CSS / Tailwind</span>
+                  <span class="skill-pct">92%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width:92%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ──────────────────────────────────────────────────────────
+         CONTACT SECTION
+         ──────────────────────────────────────────────────────── -->
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <p class="section-label">Kontak</p>
+          <h2 id="contact-heading" class="section-title">
+            Mari <span class="gradient-text">Berkolaborasi</span>
+          </h2>
+          <p class="section-desc">
+            Punya proyek menarik? Saya selalu terbuka untuk diskusi ide dan kolaborasi baru.
+          </p>
+        </div>
+
+        <!-- Contact Card -->
+        <div style="
+          max-width:600px;
+          margin-inline:auto;
+          background:var(--clr-bg-card);
+          border:1px solid var(--clr-border);
+          border-radius:calc(var(--card-radius)*1.5);
+          padding:var(--space-2xl);
+          text-align:center;
+        " class="reveal">
+
+          <div style="font-size:3rem;margin-bottom:1rem;" aria-hidden="true">👋</div>
+
+          <h3 style="font-size:1.5rem;margin-bottom:0.75rem;">
+            Yuk, ngobrol!
+            <!-- ⚠️ GANTI -->
+          </h3>
+          <p style="color:var(--clr-text-secondary);line-height:1.8;margin-bottom:1.5rem;">
+            Saya senang mendengar tentang proyek, peluang, atau sekadar berbagi ide.
+            Kirim email dan saya akan membalas dalam 24 jam.
+            <!-- ⚠️ GANTI -->
+          </p>
+
+          <a
+            class="btn btn-primary"
+            data-owner="email-link"
+            href="mailto:hello@emailanda.com"
+            style="display:inline-flex;margin-bottom:1.5rem;font-size:1rem;padding:0.875rem 2rem;"
+          >
+            ✉️ Kirim Email
+          </a>
+
+          <!-- Social links di contact -->
+          <div style="display:flex;justify-content:center;gap:0.75rem;flex-wrap:wrap;">
+            <div class="social-wrap">
+              <a data-social="github" href="#" target="_blank" rel="noopener noreferrer"
+                 class="social-link" aria-label="GitHub" data-tooltip="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+            </div>
+            <div class="social-wrap">
+              <a data-social="linkedin" href="#" target="_blank" rel="noopener noreferrer"
+                 class="social-link" aria-label="LinkedIn" data-tooltip="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+              </a>
+            </div>
+            <div class="social-wrap">
+              <a data-social="dribbble" href="#" target="_blank" rel="noopener noreferrer"
+                 class="social-link" aria-label="Dribbble" data-tooltip="Dribbble">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4.006-.816zm-11.62-2.073c.232-.396 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.176zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.46 0-.91.035-1.4.088zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.386z"/>
+                </svg>
+              </a>
+            </div>
+            <div class="social-wrap">
+              <a data-social="behance" href="#" target="_blank" rel="noopener noreferrer"
+                 class="social-link" aria-label="Behance" data-tooltip="Behance">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.051-1.969-5.051-5.020 0-3.100 1.831-5.260 5.101-5.260 3.139 0 4.962 1.950 5.001 5.020-.002.085-.002.449-.002.580h-7.3c.056 2.100 1.5 2.260 2.252 2.260.74 0 1.364-.453 1.737-1.1l3.363.52zM17.726 11.5c-.145-1.280-1.058-1.750-2.063-1.750-1.102 0-1.979.590-2.112 1.750h4.175zM3 7h4.5c3.072 0 3.5 1.800 3.5 2.962 0 1.213-.6 1.950-1.75 2.388 1.4.350 2.25 1.388 2.25 2.950C11.5 18 10.5 19 7 19H3V7zm2.5 4.5H7c1.1 0 1.5-.45 1.5-1.1 0-.713-.45-1.100-1.5-1.100H5.5v2.2zm0 4.5H7c1.5 0 2-.5 2-1.350S8.5 13.5 7 13.5H5.5V16z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">
+          <span data-owner="initials">YN</span><span class="dot">.</span>
+        </span>
+
+        <p class="footer-copy">
+          <!-- ⚠️ GANTI nama Anda -->
+          © <span id="footer-year"></span> <span data-owner="name">Nama Anda</span>
+          · Dibuat dengan ❤️ &amp; ☕
+        </p>
+
+        <div class="footer-socials" aria-label="Social links di footer">
+          <div class="social-wrap">
+            <a data-social="github" href="#" target="_blank" rel="noopener noreferrer"
+               class="social-link" aria-label="GitHub">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </a>
+          </div>
+          <div class="social-wrap">
+            <a data-social="linkedin" href="#" target="_blank" rel="noopener noreferrer"
+               class="social-link" aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Footer year script (inline) -->
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+
+  <!-- ============================================================
+       MODAL OVERLAY
+       Diletakkan di luar main agar tidak terpengaruh overflow
+       ============================================================ -->
+  <div id="modal-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Detail proyek">
+    <div id="modal" class="modal"></div>
+  </div>
+
+  <!-- ============================================================
+       SCROLL TO TOP BUTTON
+       ============================================================ -->
+  <button
+    id="scroll-top"
+    class="scroll-top"
+    aria-label="Kembali ke atas halaman"
+    title="Scroll ke atas"
+  >
+    ↑
+  </button>
+
+  <!-- ============================================================
+       SCRIPTS — ES Modules
+       ============================================================ -->
+  <script type="module" src="js/main.js"></script>
+
+</body>
+</html>
+
